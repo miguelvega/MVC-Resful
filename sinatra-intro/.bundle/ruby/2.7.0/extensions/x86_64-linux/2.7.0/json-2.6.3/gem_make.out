@@ -1,0 +1,13 @@
+current directory: /home/miguelubuntu/Escritorio/CC3S2/MVC-Resful/sinatra-intro/.bundle/ruby/2.7.0/gems/json-2.6.3/ext/json
+/usr/bin/ruby2.7 -I /usr/lib/ruby/2.7.0 -r ./siteconf20230928-53681-upiiqn.rb extconf.rb
+creating Makefile
+
+current directory: /home/miguelubuntu/Escritorio/CC3S2/MVC-Resful/sinatra-intro/.bundle/ruby/2.7.0/gems/json-2.6.3/ext/json
+make "DESTDIR=" clean
+
+current directory: /home/miguelubuntu/Escritorio/CC3S2/MVC-Resful/sinatra-intro/.bundle/ruby/2.7.0/gems/json-2.6.3/ext/json
+make "DESTDIR="
+make: No se hace nada para 'all'.
+
+current directory: /home/miguelubuntu/Escritorio/CC3S2/MVC-Resful/sinatra-intro/.bundle/ruby/2.7.0/gems/json-2.6.3/ext/json
+make "DESTDIR=" install
