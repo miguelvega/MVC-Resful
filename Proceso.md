@@ -67,6 +67,8 @@ get '/todos/:id' do
 end
 
 ```
+Este codigo, nos muestra que cuando alguien envía una solicitud GET a la ruta '/todos/:id' con un ID válido, este bloque de código busca la tarea correspondiente en la base de datos y devuelve los detalles de esa tarea en formato JSON. Si no se encuentra la tarea, se devuelve un mensaje de error en formato JSON.
+
 - update: Esta operación permitirá modificar una tarea existente.
 - destroy: Esta operación eliminará una tarea existente de la base de datos.
 
