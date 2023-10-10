@@ -161,3 +161,8 @@ Operaciones como ver una lista de elementos, crear nuevos elementos, actualizar 
 ## Parte 3
 
 Dado que HTTP es un protocolo RESTful, cada solicitud debe ir seguida de una respuesta, por lo que debemos devolver una vista o redirigir a cada solicitud. Usaremos JSON para las respuestas, que es similar a lo que hacen muchas API. ¿Hacia dónde debería ir la respuesta?.
+
+Generalmente tenemos dos enfoques comunes para dirigir las respuestas.
+- Podemos Enviar JSON como respuesta directa: En este enfoque, después de procesar una solicitud, simplemente envías una respuesta JSON directamente al cliete.
+- Redirigir a una vista JSON: En lugar de enviar JSON directamente, podemos redirigir la solicitud a una vista específica (template) que formatee la respuesta como JSON y la envíe de vuelta al cliente. Esto puede ser útil si deseamos aplicar algún formato o lógica adicional a la respuesta antes de enviarla.
+
