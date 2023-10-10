@@ -131,6 +131,7 @@ end
 
 ```
 
+Este código sirve para eliminar una tarea específica de la lista de tareas. Utiliza el metodo DELETE que incluye el parámetro de ruta :id (delete '/todos/:id') para identificar la tarea que se va a eliminar. Si la tarea con el ID proporcionado existe en la base de datos, se elimina. Si no existe, se devuelve un mensaje de error.
 
 ![Captura de pantalla de 2023-10-10 01-13-32](https://github.com/miguelvega/MVC-Resful/assets/124398378/cd7eff77-a68c-4dec-a6af-a66702f152cb)
 
