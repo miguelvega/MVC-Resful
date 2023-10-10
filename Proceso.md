@@ -27,6 +27,8 @@ Con lo cual se puede observar nuevos registros de solicitudes realizadas.
 
 ## Parte 1
 
+Lo primero que vamos a hacer es crear un modelo. A diferencia de Rails, Sinatra no tiene MVC integrado, así que vamos a piratear el nuestro. Usaremos `ActiveRecord` sobre una base de datos SQLite. En esta aplicación, ¿cuál será nuestro modelo y qué operaciones CRUD le aplicaremos?
+
 ## Parte 2
 
 ## Parte 3
