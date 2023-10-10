@@ -45,7 +45,8 @@ El codigo nos muestra que cuando alguien acceda a la ruta '/todos', este bloque 
 ```
 post '/todos' do
   content_type :json
-  description = params[:description]
+  request_body = JSON.parse(request.body.read)
+  description = request_body['description']
 
   if description && !description.empty?
     new_todo = Todo.create(description: description)
