@@ -107,6 +107,7 @@ put '/todos/:id' do
 end
 
 ```
+El codigo permite actualizar la descripción de una tarea existente en la base de datos utilizando una solicitud HTTP PUT con un parametro de ruta :id para identificar la tarea que se va a actualizar. Toma la nueva descripción de la tarea del cuerpo de la solicitud HTTP (request body) en formato JSON. Luego, actualiza la descripción de la tarea en la base de datos con la nueva descripción proporcionada. Devuelve una respuesta JSON que indica "update success" si la actualización fue exitosa. Ahora bien, si la tarea no existe o la nueva descripción está en blanco, se devuelve un mensaje de error en JSON.
 
 
 ![Captura de pantalla de 2023-10-10 01-05-05](https://github.com/miguelvega/MVC-Resful/assets/124398378/6747217d-cdda-49ce-8ee5-caebc0b5bd6c)
