@@ -52,6 +52,8 @@ post '/todos' do
 end
 
 ```
+Este codigo, nos muestra que cuando alguien envía una solicitud POST a la ruta '/todos' con una descripción válida, este bloque de código crea una nueva tarea por hacer en la base de datos y devuelve un mensaje de éxito junto con el id de la nueva tarea en formato JSON. Ahora bien, si la descripción está vacía o no se proporciona, se devuelve un mensaje de error en formato JSON.
+
 - read: Esta operación mostrará los detalles de una tarea específica, identificada por su ID.
 - update: Esta operación permitirá modificar una tarea existente.
 - destroy: Esta operación eliminará una tarea existente de la base de datos.
