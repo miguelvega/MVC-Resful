@@ -37,6 +37,7 @@ end
 ### how do we write new class in Rails?
 ### why there's no setter and getter method (or attr_accessor)?
 class Todo < ActiveRecord::Base
+
 end
 
 # populate the database if it is empty (avoid running this piece of code twice)
@@ -66,24 +67,58 @@ end
 
 # create a new todo
 # return: if we receive non-empty description, render json with msg set to "create success"
-# 			otherwise render json with msg set to "error: description can't be blank"
+#         otherwise render json with msg set to "error: description can't be blank"
 # hint: use method Todo's class method create
 post '/todos' do
-  ### TU CODIGO AQUI
+  content_type :json
+  request_body = JSON.parse(request.body.read)
+  description = request_body['description']
+
+  if description && !description.empty?
+    new_todo = Todo.create(description: description)
+    { msg: "create success", todo_id: new_todo.id }.to_json
+  else
+    { msg: "error: description can't be blank" }.to_json
+  end
 end
 
+
 # update a todo
-# return: if todo with specified id exist and description non-empty, render json with msg set to "update success"
-# 				otherwise render json with msg set to "update failure"
+# return: if todo with specified id exists and description is non-empty, render json with msg set to "update success"
+#         otherwise render json with msg set to "update failure"
 # hint: Todo class has instance method update_attribute
 put '/todos/:id' do
-  ### TU CODIGO AQUI ###
+  content_type :json
+  todo = Todo.find_by_id(params[:id])
+
+  if todo
+    request_body = JSON.parse(request.body.read)
+    new_description = request_body['description']
+
+    if new_description && !new_description.empty?
+      todo.update(description: new_description)
+      { msg: "update success" }.to_json
+    else
+      { msg: "error: description can't be blank" }.to_json
+    end
+  else
+    { msg: "error: specified todo not found" }.to_json
+  end
 end
 
 # delete a todo
-# return: if todo with specified id exist, render json with msg set to "delete success"
-# 				otherwise render json with msg set to "delete failure"
+# return: if todo with specified id exists, render json with msg set to "delete success"
+#         otherwise render json with msg set to "delete failure"
 # hint: Todo class has instance method destroy
 delete '/todos/:id' do
-  ### TU CODIGO AQUI ###
+  content_type :json
+  todo = Todo.find_by_id(params[:id])
+
+  if todo
+    todo.destroy
+    { msg: "delete success" }.to_json
+  else
+    { msg: "error: specified todo not found" }.to_json
+  end
 end
+

@@ -37,6 +37,7 @@ end
 	### how do we write new class in Rails?
 	### why there's no setter and getter method (or attr_accessor)?
 class Todo < ActiveRecord::Base
+
 end
 
 # populate the database if it is empty (avoid running this piece of code twice)
