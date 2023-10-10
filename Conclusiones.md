@@ -22,7 +22,7 @@ Abrimos otra terminal y colocamos el comando `  curl http://localhost:4567/todos
 Se obtiene una salida en formato JSON ya que la ruta /todos de la aplicación Sinatra está configurada para responder en formato JSON cuando se hace una solicitud GET a esa ruta.
 ![Captura de pantalla de 2023-10-09 19-47-12](https://github.com/miguelvega/MVC-Resful/assets/124398378/997d23ff-f951-41e3-a5f7-1508727360fa)
 
-Con lo cual se puede observar nuevos registros de solicitudes realidas.
+Con lo cual se puede observar nuevos registros de solicitudes realizadas.
 
 
 ## Parte 1
