@@ -36,6 +36,9 @@ get '/todos' do
   Todo.all.to_json
 end
 ```
+
+![Captura de pantalla de 2023-10-09 22-57-54](https://github.com/miguelvega/MVC-Resful/assets/124398378/a33f8577-1db3-46bc-98be-80a54ce831ca)
+
 El codigo nos muestra que cuando alguien acceda a la ruta '/todos', este bloque de código se ejecuta y devuelve una respuesta que contiene todas las tareas por hacer almacenadas en la base de datos en formato JSON.
 - create: Esta operación permitirá agregar nuevas tareas por hacer a la base de datos.
 ```
@@ -67,6 +70,8 @@ get '/todos/:id' do
 end
 
 ```
+![Captura de pantalla de 2023-10-09 22-56-13](https://github.com/miguelvega/MVC-Resful/assets/124398378/3c001c4a-ee9c-401f-a330-78342adabf0f)
+
 Este codigo, nos muestra que cuando alguien envía una solicitud GET a la ruta '/todos/:id' con un ID válido, este bloque de código busca la tarea correspondiente en la base de datos y devuelve los detalles de esa tarea en formato JSON. Si no se encuentra la tarea, se devuelve un mensaje de error en formato JSON.
 
 - update: Esta operación permitirá modificar una tarea existente.
