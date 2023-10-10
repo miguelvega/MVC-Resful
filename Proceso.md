@@ -58,6 +58,10 @@ end
 ```
 Este codigo, nos muestra que cuando alguien envía una solicitud POST a la ruta '/todos' con una descripción válida, este bloque de código crea una nueva tarea por hacer en la base de datos y devuelve un mensaje de éxito junto con el id de la nueva tarea en formato JSON. Ahora bien, si la descripción está vacía o no se proporciona, se devuelve un mensaje de error en formato JSON.
 
+![Captura de pantalla de 2023-10-10 00-50-13](https://github.com/miguelvega/MVC-Resful/assets/124398378/4d799045-0414-40d5-a4fa-4ddf448caf29)
+
+![Captura de pantalla de 2023-10-10 00-51-15](https://github.com/miguelvega/MVC-Resful/assets/124398378/944ed328-bdb9-4203-9afd-902fd7e0d4ad)
+
 - read: Esta operación mostrará los detalles de una tarea específica, identificada por su ID.
 ```
 get '/todos/:id' do
