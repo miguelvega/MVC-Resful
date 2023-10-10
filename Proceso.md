@@ -139,6 +139,25 @@ Este código sirve para eliminar una tarea específica de la lista de tareas. Ut
 
 ## Parte 2
 
+A continuación, creemos algunas rutas para que los usuarios puedan interactuar con la aplicación. Aquí hay una URL de ejemplo:
+
+```
+  https://www.etsy.com/search?q=test#copy
+```
+Primero, especifica qué partes de la URL son  componentes según la discusión sobre la forma de una URL. Consulta esta publicación de [IBM](https://www.ibm.com/docs/en/cics-ts/5.1?topic=concepts-components-url) que detalla los componentes de una URL.
+
+- https:// :
+- etsy :
+- 443 :
+- /search :
+- q=test :
+- copy :
+
+En Sinatra, el enrutamiento y el controlador están acoplados, lo que facilita la declaración de rutas. Declaramos algunas rutas RESTful para que podamos ver una lista de tareas pendientes, crear una tarea pendiente, editar una tarea pendiente y eliminar una tarea pendiente. ¿Qué acciones RESTful deberíamos utilizar para estos?
+
+Operaciones como ver una lista de elementos, crear nuevos elementos, actualizar elementos existentes y eliminar elementos se ejecutan utilizando las correspondientes herramientas de solicitud, que son GET, POST, PUT y DELETE. Estas acciones fueron demostradas previamente .
+
+
 ## Parte 3
 
 
