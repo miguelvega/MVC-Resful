@@ -16,8 +16,13 @@ La aplicación está respondiendo con una lista de tareas almacenadas en la base
 Nos dirigimos a la terminal para ver las nuevas solicitudes realizadas.
 ![Captura de pantalla de 2023-10-09 19-45-46](https://github.com/miguelvega/MVC-Resful/assets/124398378/b15dbb39-5ca0-4ef9-ad4b-716577fb5f06)
 Como se puede apreciar se realizó una solicitud GET a la ruta /todos en la aplicación Sinatra, y la solicitud se procesó con éxito.
+
+Abrimos otra terminal y colocamos el comando `  curl http://localhost:4567/todos`
 ![Captura de pantalla de 2023-10-09 19-46-02](https://github.com/miguelvega/MVC-Resful/assets/124398378/c169cae7-d03f-4717-9e2f-858764a919d4)
+Se obtiene una salida en formato JSON ya que la ruta /todos de la aplicación Sinatra está configurada para responder en formato JSON cuando se hace una solicitud GET a esa ruta.
 ![Captura de pantalla de 2023-10-09 19-47-12](https://github.com/miguelvega/MVC-Resful/assets/124398378/997d23ff-f951-41e3-a5f7-1508727360fa)
+
+Con lo cual se puede observar nuevos registros de solicitudes realidas.
 
 
 ## Parte 1
