@@ -55,6 +55,18 @@ end
 Este codigo, nos muestra que cuando alguien envía una solicitud POST a la ruta '/todos' con una descripción válida, este bloque de código crea una nueva tarea por hacer en la base de datos y devuelve un mensaje de éxito junto con el id de la nueva tarea en formato JSON. Ahora bien, si la descripción está vacía o no se proporciona, se devuelve un mensaje de error en formato JSON.
 
 - read: Esta operación mostrará los detalles de una tarea específica, identificada por su ID.
+```
+get '/todos/:id' do
+  content_type :json
+  todo = Todo.find_by_id(params[:id])
+  if todo
+    return {description: todo.description}.to_json
+  else
+    return {msg: "error: specified todo not found"}.to_json
+  end
+end
+
+```
 - update: Esta operación permitirá modificar una tarea existente.
 - destroy: Esta operación eliminará una tarea existente de la base de datos.
 
