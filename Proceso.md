@@ -112,7 +112,28 @@ end
 ![Captura de pantalla de 2023-10-10 01-05-05](https://github.com/miguelvega/MVC-Resful/assets/124398378/6747217d-cdda-49ce-8ee5-caebc0b5bd6c)
 
 ![Captura de pantalla de 2023-10-10 01-05-30](https://github.com/miguelvega/MVC-Resful/assets/124398378/d8ca2c44-7e15-4506-b135-25d1a5add74f)
+
 - destroy: Esta operación eliminará una tarea existente de la base de datos.
+
+```
+delete '/todos/:id' do
+  content_type :json
+  todo = Todo.find_by_id(params[:id])
+
+  if todo
+    todo.destroy
+    { msg: "delete success" }.to_json
+  else
+    { msg: "error: specified todo not found" }.to_json
+  end
+end
+
+```
+
+
+![Captura de pantalla de 2023-10-10 01-13-32](https://github.com/miguelvega/MVC-Resful/assets/124398378/cd7eff77-a68c-4dec-a6af-a66702f152cb)
+
+![Captura de pantalla de 2023-10-10 01-13-50](https://github.com/miguelvega/MVC-Resful/assets/124398378/229a08f7-0892-4a3c-a94c-1b06cc58c0c6)
 
 ## Parte 2
 
