@@ -380,7 +380,7 @@ configure:10354: $? = 0
 configure:10354: result: yes
 configure:10360: checking for fullfsync
 configure:10360: gcc -o conftest -fPIC -O2 -fvisibility=hidden   conftest.c  >&5
-/usr/bin/ld: /tmp/ccBKPI9c.o: in function `main':
+/usr/bin/ld: /tmp/ccU2aEL5.o: in function `main':
 conftest.c:(.text.startup+0xb): undefined reference to `fullfsync'
 collect2: error: ld returned 1 exit status
 configure:10360: $? = 1
@@ -628,7 +628,7 @@ configure:10646: $? = 0
 configure:10646: result: yes
 configure:10653: checking for library containing tgetent
 configure:10683: gcc -o conftest -fPIC -O2 -fvisibility=hidden   conftest.c  >&5
-/usr/bin/ld: /tmp/ccFNe0CU.o: in function `main':
+/usr/bin/ld: /tmp/ccAf2nXn.o: in function `main':
 conftest.c:(.text.startup+0xb): undefined reference to `tgetent'
 collect2: error: ld returned 1 exit status
 configure:10683: $? = 1
@@ -679,7 +679,7 @@ configure:10683: $? = 0
 configure:10703: result: -ltermcap
 configure:10712: checking for library containing readline
 configure:10742: gcc -o conftest -fPIC -O2 -fvisibility=hidden   conftest.c -ltermcap  >&5
-/usr/bin/ld: /tmp/cct6awgM.o: in function `main':
+/usr/bin/ld: /tmp/cc3f6KO8.o: in function `main':
 conftest.c:(.text.startup+0xb): undefined reference to `readline'
 collect2: error: ld returned 1 exit status
 configure:10742: $? = 1
@@ -730,7 +730,7 @@ configure:10742: $? = 0
 configure:10762: result: -lreadline
 configure:10802: checking for library containing pthread_create
 configure:10832: gcc -o conftest -fPIC -O2 -fvisibility=hidden   conftest.c  >&5
-/usr/bin/ld: /tmp/ccUXDkQA.o: in function `main':
+/usr/bin/ld: /tmp/ccz2rwzX.o: in function `main':
 conftest.c:(.text.startup+0xb): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
 configure:10832: $? = 1
@@ -786,7 +786,7 @@ configure:10891: $? = 0
 configure:10911: result: none required
 configure:10935: checking for library containing dlopen
 configure:10965: gcc -o conftest -fPIC -O2 -fvisibility=hidden   conftest.c -lpthread  >&5
-/usr/bin/ld: /tmp/cc6VPF2a.o: in function `main':
+/usr/bin/ld: /tmp/ccVvSdGC.o: in function `main':
 conftest.c:(.text.startup+0xb): undefined reference to `dlopen'
 collect2: error: ld returned 1 exit status
 configure:10965: $? = 1
@@ -847,7 +847,7 @@ conftest.c:35:6: warning: conflicting types for built-in function 'ceil'; expect
       |      ^~~~
 conftest.c:1:1: note: 'ceil' is declared in header '<math.h>'
     1 | /* confdefs.h */
-/usr/bin/ld: /tmp/ccXO21R1.o: in function `main':
+/usr/bin/ld: /tmp/cck1Vdxq.o: in function `main':
 conftest.c:(.text.startup+0xb): undefined reference to `ceil'
 collect2: error: ld returned 1 exit status
 configure:11050: $? = 1
@@ -933,7 +933,7 @@ configure:11305: $? = 0
 configure:11305: result: yes
 configure:11310: checking for library containing deflate
 configure:11340: gcc -o conftest -fPIC -O2 -fvisibility=hidden   conftest.c -lm -ldl -lpthread  >&5
-/usr/bin/ld: /tmp/ccUC7xor.o: in function `main':
+/usr/bin/ld: /tmp/ccPzPqWO.o: in function `main':
 conftest.c:(.text.startup+0xb): undefined reference to `deflate'
 collect2: error: ld returned 1 exit status
 configure:11340: $? = 1

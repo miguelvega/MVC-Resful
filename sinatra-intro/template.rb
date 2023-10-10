@@ -69,15 +69,7 @@ end
 # 			otherwise render json with msg set to "error: description can't be blank"
 # hint: use method Todo's class method create
 post '/todos' do
-  content_type :json
-  description = params[:description]
-
-  if description && !description.empty?
-    new_todo = Todo.create(description: description)
-    { msg: "create success", todo_id: new_todo.id }.to_json
-  else
-    { msg: "error: description can't be blank" }.to_json
-  end
+  ### TU CODIGO AQUI
 end
 
 # update a todo
@@ -85,16 +77,7 @@ end
 # 				otherwise render json with msg set to "update failure"
 # hint: Todo class has instance method update_attribute
 put '/todos/:id' do
-  content_type :json
-  todo = Todo.find_by_id(params[:id])
-  description = params[:description]
-
-  if todo && description && !description.empty?
-    todo.update_attribute(:description, description)
-    { msg: "update success" }.to_json
-  else
-    { msg: "update failure" }.to_json
-  end
+  ### TU CODIGO AQUI ###
 end
 
 # delete a todo
@@ -102,13 +85,5 @@ end
 # 				otherwise render json with msg set to "delete failure"
 # hint: Todo class has instance method destroy
 delete '/todos/:id' do
-  content_type :json
-  todo = Todo.find_by_id(params[:id])
-
-  if todo
-    todo.destroy
-    { msg: "delete success" }.to_json
-  else
-    { msg: "delete failure" }.to_json
-  end
+  ### TU CODIGO AQUI ###
 end

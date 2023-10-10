@@ -1,5 +1,5 @@
 current directory: /home/miguelubuntu/Escritorio/CC3S2/MVC-Resful/sinatra-intro/.bundle/ruby/2.6.0/gems/sqlite3-1.6.6/ext/sqlite3
-/home/miguelubuntu/.rvm/rubies/ruby-2.6.6/bin/ruby -I /home/miguelubuntu/.rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0 -r ./siteconf20231009-69684-1j1jnth.rb extconf.rb
+/home/miguelubuntu/.rvm/rubies/ruby-2.6.6/bin/ruby -I /home/miguelubuntu/.rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0 -r ./siteconf20231009-4920-kmagiy.rb extconf.rb
 Building sqlite3-ruby using packaged sqlite3.
 Extracting sqlite-autoconf-3430100.tar.gz into tmp/x86_64-linux-gnu/ports/sqlite3/3.43.1... OK
 Running 'configure' for sqlite3 3.43.1... OK
@@ -44,4 +44,4 @@ linking shared-object sqlite3/sqlite3_native.so
 
 current directory: /home/miguelubuntu/Escritorio/CC3S2/MVC-Resful/sinatra-intro/.bundle/ruby/2.6.0/gems/sqlite3-1.6.6/ext/sqlite3
 make "DESTDIR=" install
-/usr/bin/install -m 0755 sqlite3_native.so ./.gem.20231009-69684-8yh4cm/sqlite3
+/usr/bin/install -m 0755 sqlite3_native.so ./.gem.20231009-4920-nmtt9k/sqlite3
