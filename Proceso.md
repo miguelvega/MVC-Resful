@@ -29,6 +29,33 @@ Con lo cual se puede observar nuevos registros de solicitudes realizadas.
 
 Lo primero que vamos a hacer es crear un modelo. A diferencia de Rails, Sinatra no tiene MVC integrado, así que vamos a piratear el nuestro. Usaremos `ActiveRecord` sobre una base de datos SQLite. En esta aplicación, ¿cuál será nuestro modelo y qué operaciones CRUD le aplicaremos?
 
+- index: Esta operación mostrará una lista de todas las tareas por hacer existentes en la base de datos, se utiliza la ruta '/todos' para acceder a esta operación
+```
+get '/todos' do
+  content_type :json
+  Todo.all.to_json
+end
+```
+El codigo nos muestra que cuando alguien acceda a la ruta '/todos', este bloque de código se ejecuta y devuelve una respuesta que contiene todas las tareas por hacer almacenadas en la base de datos en formato JSON.
+- create: Esta operación permitirá agregar nuevas tareas por hacer a la base de datos.
+```
+post '/todos' do
+  content_type :json
+  description = params[:description]
+
+  if description && !description.empty?
+    new_todo = Todo.create(description: description)
+    { msg: "create success", todo_id: new_todo.id }.to_json
+  else
+    { msg: "error: description can't be blank" }.to_json
+  end
+end
+
+```
+- read: Esta operación mostrará los detalles de una tarea específica, identificada por su ID.
+- update: Esta operación permitirá modificar una tarea existente.
+- destroy: Esta operación eliminará una tarea existente de la base de datos.
+
 ## Parte 2
 
 ## Parte 3
