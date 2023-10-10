@@ -160,4 +160,4 @@ Operaciones como ver una lista de elementos, crear nuevos elementos, actualizar 
 
 ## Parte 3
 
-
+Dado que HTTP es un protocolo RESTful, cada solicitud debe ir seguida de una respuesta, por lo que debemos devolver una vista o redirigir a cada solicitud. Usaremos JSON para las respuestas, que es similar a lo que hacen muchas API. ¿Hacia dónde debería ir la respuesta?.
