@@ -146,12 +146,12 @@ A continuación, creemos algunas rutas para que los usuarios puedan interactuar 
 ```
 Primero, especifica qué partes de la URL son  componentes según la discusión sobre la forma de una URL. Consulta esta publicación de [IBM](https://www.ibm.com/docs/en/cics-ts/5.1?topic=concepts-components-url) que detalla los componentes de una URL.
 
-- https:// :
-- etsy :
-- 443 :
-- /search :
-- q=test :
-- copy :
+- https:// : Indica que se está utilizando el protocolo HTTPS para la comunicación segura a través de la web.
+- etsy : Nombre del dominio o sitio web que se está accediendo
+- 443 : Puerto estándar para conexiones HTTPS. Indica el canal a través del cual se establecerá la comunicación segura
+- /search : Parte de la URL que especifica la ubicación específica del recurso dentro del sitio web. En este caso, "/search" indica que estás accediendo a una página o recurso dentro de Etsy relacionado con la búsqueda.
+- q=test : Parametro de consulta (query parameter). Es parte de la URL que se utiliza para enviar datos o parámetros al servidor. En este caso, "q=test" indica que se está realizando una búsqueda en Etsy con el término "test".
+- copy : El fragmento es una parte opcional de la URL que se utiliza para navegar a una sección específica dentro de una página web.
 
 En Sinatra, el enrutamiento y el controlador están acoplados, lo que facilita la declaración de rutas. Declaramos algunas rutas RESTful para que podamos ver una lista de tareas pendientes, crear una tarea pendiente, editar una tarea pendiente y eliminar una tarea pendiente. ¿Qué acciones RESTful deberíamos utilizar para estos?
 
