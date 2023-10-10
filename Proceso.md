@@ -86,6 +86,32 @@ Este codigo, nos muestra que cuando alguien envía una solicitud GET a la ruta '
 ![Captura de pantalla de 2023-10-09 23-21-28](https://github.com/miguelvega/MVC-Resful/assets/124398378/df4280b7-5a91-4793-a38c-7be42ee95542)
 
 - update: Esta operación permitirá modificar una tarea existente.
+```
+put '/todos/:id' do
+  content_type :json
+  todo = Todo.find_by_id(params[:id])
+
+  if todo
+    request_body = JSON.parse(request.body.read)
+    new_description = request_body['description']
+
+    if new_description && !new_description.empty?
+      todo.update(description: new_description)
+      { msg: "update success" }.to_json
+    else
+      { msg: "error: description can't be blank" }.to_json
+    end
+  else
+    { msg: "error: specified todo not found" }.to_json
+  end
+end
+
+```
+
+
+![Captura de pantalla de 2023-10-10 01-05-05](https://github.com/miguelvega/MVC-Resful/assets/124398378/6747217d-cdda-49ce-8ee5-caebc0b5bd6c)
+
+![Captura de pantalla de 2023-10-10 01-05-30](https://github.com/miguelvega/MVC-Resful/assets/124398378/d8ca2c44-7e15-4506-b135-25d1a5add74f)
 - destroy: Esta operación eliminará una tarea existente de la base de datos.
 
 ## Parte 2
