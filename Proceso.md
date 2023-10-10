@@ -77,6 +77,9 @@ Este codigo, nos muestra que cuando alguien envía una solicitud GET a la ruta '
 ![Captura de pantalla de 2023-10-09 22-56-13](https://github.com/miguelvega/MVC-Resful/assets/124398378/3c001c4a-ee9c-401f-a330-78342adabf0f)
 
 
+![Captura de pantalla de 2023-10-09 23-20-22](https://github.com/miguelvega/MVC-Resful/assets/124398378/540ab536-c2db-415e-9bc9-4cfdff46c248)
+
+
 - update: Esta operación permitirá modificar una tarea existente.
 - destroy: Esta operación eliminará una tarea existente de la base de datos.
 
